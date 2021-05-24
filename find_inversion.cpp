@@ -39,7 +39,7 @@ long long int merge(long long int arr[], long long int temp[], long long int lef
     long long int count = 0;
     i = left, j = mid, k = left;
     while((i <= mid - 1) && (j <= right)){
-        if(arr[i] < arr[j]){
+        if(arr[i] <= arr[j]){
             temp[k++] = arr[i++];
         }
         else{
